@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/search.js"></script>
+    <title>BBQ</title>
+</head>
+<body>
+    <header>
+        <h3>BBQ-Warren</h3>
+        <input type="text" id="searchBox">
+        <button onclick="searchBaidu()" accesskey="Enter">Baidu</button>
+        <button onclick="searchGithub()">GitHub</button>
+        <button onclick="searchBing()">Bing</button>
+        <button onclick="searchGoogle()">Google</button>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-2">
+                    <h3>Tools</h3>
+                    <ul>
+                        
+                        <li>
+                            <a href="https://www.bilibili.com/" target="_blank">哔哩哔哩</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.zhihu.com/" target="_blank">知乎</a>
+                        </li>
+                        <li>
+                            <a href="https://www.runoob.com/" target="_blank">菜鸟教程</a>
+                        </li>
+                        <li>
+                            <a href="https://hellogitlab.com/" target="_blank">GitLab</a>
+                        </li>
+                        <li>
+                            <a href="https://www.programmercarl.com/" target="_blank">代码随想录</a>
+                        </li>
+                        <li>
+                            <a href="https://gitee.com/" target="_blank">Gitee</a>
+                        </li>
+                        <li>
+                            <a href="https://www.oschina.net/" target="_blank">oschina</a>
+                        </li>
+                        <li>
+                            <a href="https://www.infoq.cn/" target="_blank">InfoQ</a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank">stackoverflow</a>
+                        </li>
+                        <li>
+                            <a href="https://www.v2ex.com/" target="_blank">V2EX</a>
+                        </li>
+                        <li>
+                            <a href="https://segmentfault.com/" target="_blank">segmentfault</a>
+                        </li>
+                        <li>
+                            <a href="https://www.csdn.net/" target="_blank">CSDN</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://mubu.com/app" target="_blank">幕布</a>
+                        </li>
+                        <li>
+                            <a href="https://www.sdnlab.com/" target="_blank">SDNLAB</a>
+                        </li>
+                        <li>
+                            <a href="https://www.typingclub.com/sportal/" target="_blank">TypingClub</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2">
+                    <h3>刷题园</h3>
+                    <ul>
+                        <li>
+                            <a href="https://leetcode.cn/" target="_blank">力扣</a>
+                        </li>
+                        <li>
+                            <a href="https://www.nowcoder.com/" target="_blank">牛客</a>
+                        </li>
+                        
+                        <li>
+                            <a href="http://ife.baidu.com/encyclopedia/readme1.html" target="_blank">百度前端技术学园</a>
+                        </li>
+                        <li>
+                            <a href="https://www.freecodecamp.org/chinese/learn/" target="_blank">Freecodecamp</a>
+                        </li>
+                        
+                        <li>
+                            <a href="https://www.acwing.com/" target="_blank">ACWing</a>
+                        </li>
+                        <li>
+                            <a href="https://www.luogu.com.cn/" target="_blank">洛谷</a>
+                        </li>
+                        <li>
+                            <a href="https://pintia.cn/problem-sets/dashboard" target="_blank">清华PTA</a>
+                        </li>
+                        <li>
+                            <a href="https://fe.ecool.fun/" target="_blank">前端面试题宝典</a>
+                        </li>
+                        <li>
+                            <a href="https://www.stratascratch.com/" target="_blank">Data Science</a>
+                        </li>
+                        <li>
+                            <a href="https://sqlzoo.net/wiki/SQL_Tutorial/zh" target="_blank">SQL刷题网</a>
+                        </li>
+                        <li>
+                            <a href="https://www.hackerrank.com/" target="_blank">HackerRank</a>
+                        </li>
+                        <li>
+                            <a href="https://codeforces.com/" target="_blank">CodeForces</a>
+                        </li>
+                        <li>
+                            <a href="https://www.topcoder.com/" target="_blank">TopCoder</a>
+                        </li>
+                        <li>
+                            <a href="https://www.codewars.com/" target="_blank">CodeWars</a>
+                        </li>
+                        <li>
+                            <a href="https://projecteuler.net/" target="_blank">Project Euler</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="col-xl-2">
+                    <h3>技术园</h3>
+                    <ul>
+                        <li>
+                            <a href="front-end.html">前端</a>
+                        </li>
+                        <li>
+                            <a href="c-or-cpp.html">C/C++</a>
+                        </li>
+                        <li>
+                            <a href="python.html">Python</a>
+                        </li>
+                        <li>
+                            <a href="sql.html">SQL</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2">
+                    <h3>其他常用</h3>
+                    <ul>
+                        <li>
+                            <a href="https://fanyi.baidu.com/" target="_blank">百度翻译</a>
+                        </li>
+                        <li>
+                            <a href="https://fanyi.youdao.com/index.html#/" target="_blank">有道翻译</a>
+                        </li>
+                        <li>
+                            <a href="https://translate.google.com/" target="_blank">谷歌翻译</a>
+                        </li>
+                        <li>
+                            <a href="https://tools.pdf24.org/zh/" target="_blank">PDF-Tools1</a>
+                        </li>
+                        <li>
+                            <a href="http://www.pdfdo.com/" target="_blank">PDF-Tools2</a>
+                        </li>
+                        <li>
+                            <a href="https://study.zwjjiaozhu.top/posts/chatgpt-mirror-sites.html" target="_blank">Chatgpt国内镜像</a>
+                        </li>
+                        <li>
+                            <a href="https://www.drawio.com/" target="_blank">在线画流程图</a>
+                        </li>
+                        <li>
+                            <a href="https://www.qiumi1314.com/" target="_blank">NBA</a>
+                        </li>
+                        <li>
+                            <a href="https://www.chessdb.cn/query/" target="_blank">象棋云库</a>
+                        </li>
+                        <li>
+                            <a href="others.html">其他工具</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2">
+                    <h3>科研园</h3>
+                    <ul>
+                        <li>
+                            <a href="https://scholar.google.com/" target="_blank">Google学术</a>
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/" target="_blank">arxiv</a>
+                        </li>
+                        <li>
+                            <a href="https://latex.ustc.edu.cn/project" target="_blank">科大Latex</a>
+                        </li>
+                        <li>
+                            <a href="https://chatgpt.com/" target="_blank">ChatGPT</a>
+                        </li>
+                        <li>
+                            <a href="https://acronymify.com/" target="_blank">英文缩写gen</a>
+                        </li>
+                        <li>
+                            <a href="https://ccf.atom.im/" target="_blank">CCF会议期刊</a>
+                        </li>
+                        <li>
+                            <a href="http://kubernetes.p2hp.com/" target="_blank">K8s（-pod）</a>
+                        </li>
+                        <li>
+                            <a href="https://k8s.easydoc.net/docs/dRiQjyTY/28366845/6GiNOzyZ/9EX8Cp45" target="_blank">K8s实战</a>
+                        </li>
+                        <li>
+                            <a href="http://www.gurobi.cn/index.asp" target="_blank">Gurobi</a>
+                        </li>
+                        <li>
+                            <a href="ustc.html">中科大</a>
+                        </li>
+                        <li>
+                            <a href="https://www.tablesgenerator.com/" target="_blank">Excel生成LaTeX</a>
+                        </li>
+                        <li>
+                            <a href="https://zh.numberempire.com/combinatorialcalculator.php" target="_blank">组合数计算器</a>
+                        </li>
+                        <li>
+                            <a href="https://www.overleaf.com/project" target="_blank">Overleaf</a>
+                        </li>
+                        <li>
+                            <a href="https://icons8.com/" target="_blank">免费图标</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-2">
+                    <h3>智慧园</h3>
+                    <ul>
+                        <li>
+                            <a href="https://weread.qq.com/web/shelf" target="_blank">微信读书</a>
+                        </li>
+                        <li>
+                            <a href="https://5000yan.com/" target="_blank">国学经典</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
